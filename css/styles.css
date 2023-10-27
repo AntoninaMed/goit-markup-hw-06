@@ -40,8 +40,6 @@ address{
     margin-right: auto;
 }
 .header{
-    padding-top: 16px;
-    padding-bottom: 16px;
     border-bottom: 1px solid #e7e9fc;
 background: #FFF;
 box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -72,10 +70,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 color: #404BBF;
 } 
 
-.nav-menu{
-    display: flex;
-    align-items: center;
-}
 
 .nav-menu-list{
     display: flex; 
@@ -104,7 +98,6 @@ color: #404BBF;
     } 
     .current{
         color: #404bbf;
-        position: relative;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
     }
     .current::after{
@@ -126,7 +119,6 @@ color: #404BBF;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 16px;
     display: none;
     margin-left:120px;
 }
@@ -401,6 +393,7 @@ margin-bottom:72px;
 .section-team-item{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 gap: 72px; }
 
 .team-list{
@@ -558,6 +551,7 @@ letter-spacing: 0.02em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 72px;
     max-width: 320px;
     margin: 0 auto;
 }
@@ -569,7 +563,7 @@ letter-spacing: 0.02em;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     display: inline-block;
     text-decoration: none;
 }
@@ -591,6 +585,7 @@ line-height:1.5;
 letter-spacing: 0.02em;
 max-width: 264px;
 margin-bottom: 72px;
+
 }
 .footer-soc-text {    
     font-size: 16px;
@@ -600,13 +595,10 @@ margin-bottom: 72px;
     letter-spacing: 0.02em;
     color: #FFFFFF;        
     justify-content: center;        
-    margin-bottom: 16px;
-/*display: flex;*/
+    padding-bottom: 16px;
 }
 
-.footer-logo-soc{
 
-}
 .container-logo{
     display: flex;
     flex-direction: column;
@@ -624,7 +616,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 16px;
-margin-bottom: 72px;
 }
 
 
@@ -664,9 +655,7 @@ background-color: #31D0AA;
     letter-spacing: 0.02em;
     justify-content:center;
     display: flex;
-    margin-bottom: 16px;
-    /*margin-left: 80px;*/  
-
+    padding-bottom: 16px;
       
 }
 
@@ -935,8 +924,6 @@ background-color: #31D0AA;
     .header{
         background-color: #fff;
         border-bottom: 1px solid #E7E9FC;
-        padding-top: 16px;
-        padding-bottom: 16px;
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 
     }
@@ -962,7 +949,7 @@ background-color: #31D0AA;
     .mob-menu-container{
         display: none;
     }
-    .mob-menu-btn{
+    .menu-open-btn{
         display: none;
     }
     .nav-menu-logo{
@@ -979,9 +966,11 @@ background-color: #31D0AA;
         color: #2E2F42;
         text-decoration: none;
     }
-    .current{
-        padding-bottom: 20px; }
-        .contacts-list{
+    .current{ 
+
+    }
+
+ .contacts-list{
             display: flex;
     flex-direction: column;
     gap: 12px;
@@ -1029,7 +1018,7 @@ background-color: #31D0AA;
     }
 
     .team-list {
-        width: calc((100% - 24px) / 2);
+
     
     }
     .team-list-img{}
@@ -1052,12 +1041,19 @@ background-color: #31D0AA;
 .lower-section{
     padding: 96px 0;
 }
+.container{
+    padding-right: 16px;
+}
+.footer-container{
+    padding-left: 108px;
+}
 .footer-logo-soc{
     display: flex;
     margin-right: auto;
 }
 .container-logo {
-    margin-left: 82px;
+    display: flex;
+    align-items: start;
     margin-right: 24px;
 }
 .lower-logo-span{
@@ -1068,23 +1064,27 @@ background-color: #31D0AA;
 }
 
 .footer-soc {
-    align-items: first baseline;
-    justify-content: start;
+    display: flex;
+    flex-direction: column;
+justify-content: start;
+align-items: start;
 }
 .footer-soc-text {
     text-align: left;
 }
 
 .footer-bottom {
-    margin-left: 82px;
-    margin-right: 24px;
     align-items: baseline;
     margin-right: auto;
 }
 }
 
 
-
+.footer-form{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
 
 .footer-input  {
     width: 264px;
@@ -1107,8 +1107,6 @@ background-color: #31D0AA;
     .header{
         background-color: #fff;
         border-bottom: 1px solid #E7E9FC;
-        padding-top: 24px;
-        padding-bottom: 24px;
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
  
     }
@@ -1146,7 +1144,7 @@ background-color: #31D0AA;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 149px;
+    margin-right: 76px;
     color:#4d5ae5;
         
     }
@@ -1173,10 +1171,10 @@ background-color: #31D0AA;
         text-align: left;
         color: #2E2F42;
         text-decoration: none;
-        padding: 24px 0;
+
     }
     .current{
-        padding-bottom: 20px;
+color:#404BBF;
     }
     .current::after{
         content: "";
